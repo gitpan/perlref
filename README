@@ -8,7 +8,7 @@ Wall's Perl program.
 
 It contains a concise description of all Perl 5 statements, functions,
 variables and lots of other useful information. The Guide is based on
-Perl version 5, patchlevel 1.
+Perl version 5, patchlevel 4.
 
 The purpose of the Reference Guide is to aid in the use of Perl, to
 look up the syntax of specific functions, statements and the meaning
@@ -19,17 +19,17 @@ out. But all functions and variables are mentioned in at least one way
 they can be used.
 
 The Reference Guide is designed and created by Johan Vromans using the
-LaTex typesetting system. The kit contains a ready-to-use PostScript
-file, but the LaTeX sources are included as well. The PostScript file
-has been built using LaTeX2e and Tom Rockiki's dvips.
-
-A special formatting tool, written in Perl, makes it possible to
-reformat this PostScript output for reproduction in a number of
-formats. 
+LaTex typesetting system. The distribution contains a ready-to-use
+PostScript file. A special formatting tool, written in Perl, makes it
+possible to reformat this PostScript output for reproduction in a
+number of formats.
 
 The version number of the Reference Guide is coupled to the version of
 Perl, e.g. 5.012.2 means: the second release suitable for Perl 5
 patchlevel 12. (This is an example. There is no Perl 5 patchlevel 12 (yet?))
+
+The Reference Guide is also available as a booklet published by
+O'Reilly & Associates, see below.
 
 INSTALLATION
 ============
@@ -45,36 +45,12 @@ INSTALLATION
 	parr.pl	    - reformat and rearrange tool
 	Layout	    - description of the format
 	MANIFEST    - a list of files
-	refbase.tex - LaTeX source for the Reference Guide
-	refbase.cls - LaTeX class for the Reference Guide
-	refbase.toc - The table of contents
-	refbase.ps  - pre-generated PostScript base
-	refcbase.ps - pre-generated PostScript for the cover page
+	refbase.ps  - PostScript source for the Reference Guide
 	testbase.ps - alginment test page
 	Makefile.psutils - makefile to be used with psutils
 	PROBLEMS    - known problems on certain printers
 
- 2. Create the PostScript base file
-
-    *** Normally you can skip this step since a pre-generated
-        PostScript file is included in the kit.
-
-    This step requires the LaTeX typesetting system, version 2e of
-    1994/12/01, and dvips version 5.47 or later. Earlier 2e versions
-    of LaTeX may work, but have not been verified.
-
-    - Use "make refbase-ps" (a dash, not a dot) to create a new
-      PostScript file from the LaTeX source. This file can be printed
-      normally. 
-
-    NOTE: dvips must be instructed to use a4 format paper ('-t a4')
-	  even if you intend to print on a different format!
-
-    You can not "make refcbase-ps" in this release. 90% of the size of
-    refcbase.ps is the bitmap op the Camel, and it would be pointless
-    to include this bitmap twice.
-
- 3. Determine the paper format and alignment
+ 2. Determine the paper format and alignment
 
     As distributed, the Makefile is configured to generate output for
     A4 (21 x 29.7 cm) paper format. Uncomment the line "PAPER=-letter"
@@ -117,7 +93,7 @@ INSTALLATION
           supported by me.
           Angus' email address is <angus@harlequin.co.uk> .
 
- 4. Create the RefGuide from the PostScript base
+ 3. Create the RefGuide from the PostScript sources
 
     You can use "make" to generate a new PostScript file for one of
     the following formats:
@@ -199,6 +175,13 @@ Tim O'Reilly (O'Reilly & Associates, Inc.) wrote me:
 
 Thanks Tim, for the permission.
 
+O'Reilly & Associates have published the Reference Guide as a handy
+booklet under the name Perl5 Desktop Reference (ISBN 1-56592-187-9).
+The cyan covered version of the Desktop Reference is based on Perl 5.001,
+the magenta covered version is based on Perl 5.003. For just $6.95 you
+can save yourself the troubles of printing, aligning, adjusting,
+folding, cutting and stapling.
+
 COPYRIGHT
 =========
 
@@ -210,8 +193,8 @@ product except with written permission of the author.
 
 ---------------------------- author info -----------------------------
 Johan Vromans                                     jvromans@squirrel.nl
-Squirrel Design & Consultancy                 Boskoop, the Netherlands
-http://www.xs4all.nl/~jvromans           http://www.xxlink.nl/squirrel
+Squirrel Consultancy                          Haarlem, the Netherlands
+http://www.squirrel.nl                  http://www.xs4all.nl/~jvromans
 ----------------------------------------------------------------------
 
 CREDITS
@@ -235,5 +218,5 @@ For a japanese version of the reference guide, please contact
 Yoshiyuki KONDO <cond@lsi-j.co.jp>.
 
 -- PostScript is a trademark of Adobe, I assume.
-$Id: README,v 5.6 1996/01/13 14:32:05 jv Exp $
+$Id: README,v 5.8 1997-07-27 19:20:59+02 jv Exp $
 

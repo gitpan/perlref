@@ -1,5 +1,24 @@
+Mon Apr  1 22:58:41 1996  Johan Vromans  <jvromans@squirrel.nl>
+
+	* refmaster.tex: Add section 'Standard modules'.
+
+	* ch-stdmods.tex: Initial revision.
+
+Sun Mar 31 18:59:46 1996  Johan Vromans  <jvromans@squirrel.nl>
+
+	* ch-arrays.tex, ch-command.tex, ch-conversions.tex, ch-io.tex, ch-ipc.tex, ch-literals.tex, ch-misc.tex, ch-modules.tex, ch-operators.tex, ch-pragma.tex, ch-specarrays.tex, ch-statements.tex, ch-strings.tex, ch-syntax.tex, ch-system.tex, refbase.cls, refmaster.tex:
+	Upgrade to 5.002.
+
+Sun Mar 31 13:30:13 1996  Johan Vromans  <jvromans@squirrel.nl>
+
+	* ch-arithmetic.tex, ch-arrays.tex, ch-command.tex, ch-conversions.tex, ch-debugger.tex, ch-directories.tex, ch-files.tex, ch-filetests.tex, ch-formats.tex, ch-io.tex, ch-ipc.tex, ch-literals.tex, ch-misc.tex, ch-modules.tex, ch-operators.tex, ch-regexp.tex, ch-specarrays.tex, ch-specvars.tex, ch-statements.tex, ch-system.tex, ch-variables.tex, refbase.cls:
+	Apply changes from O'Reilly copy editors.
+	More LaTeX2e changes.
+
 Sat Jan 13 14:40:37 1996  Johan Vromans  <jvromans@squirrel.nl>
 
+	* ==== Snapshot: PUB5001_2 ====
+	
 	* ch-cover.tex: small layout change.
 
 	* ch-back.tex, refmaster.tex, refcmaster.tex: Change Copyright
