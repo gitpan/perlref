@@ -1,3 +1,90 @@
+Sun Jul 27 19:21:05 1997  Johan Vromans  <jvromans@squirrel.nl>
+
+	* ch-structs.tex, ch-system.tex, makebase.pl, refmaster.tex, ch-stdmods.tex, ch-strings.tex, ch-operators.tex, ch-pragma.tex, ch-specarrays.tex, ch-specvars.tex, ch-io.tex, ch-literals.tex, ch-misc.tex, ch-modules.tex, ch-conversions.tex, ch-cover.tex, ch-debugger.tex, ch-files.tex, ch-arrays.tex, ch-back.tex, ch-command.tex, Makefile, Makefile.psutils, README:
+	Beta-1.
+
+Fri Jul 25 17:50:33 1997  Johan Vromans  <jvromans@squirrel.nl>
+
+	* parr.pl, refbase.cls, refcmaster.tex, ch-stdmods.tex, ch-strings.tex, ch-structs.tex, ch-system.tex, ch-pragma.tex, ch-search.tex, ch-specarrays.tex, ch-specvars.tex, ch-io.tex, ch-literals.tex, ch-misc.tex, ch-modules.tex, ch-cover.tex, ch-environment.tex, ch-files.tex, ch-arrays.tex, ch-back.tex, ch-command.tex, Makefile:
+	Upgrade to 5.004_1.
+
+Wed Dec 11 22:03:58 1996  Johan Vromans  <jvromans@squirrel.nl>
+
+	* ch-stdmods.tex: Changes after check #3 for Desktop Reference rev. 2.
+
+	* ch-literals.tex, ch-regexp.tex, ch-search.tex, ch-specvars.tex, ch-strings.tex, ch-system.tex, ch-debugger.tex, ch-io.tex, ch-ipc.tex, ch-arrays.tex, ch-command.tex:
+	Changes after check #2 for Desktop Reference rev. 2.
+
+	* ch-variables.tex, ch-literals.tex, ch-modules.tex, ch-search.tex, ch-statements.tex, ch-structs.tex, ch-sysinfo.tex, ch-cover.tex, ch-debugger.tex, ch-io.tex:
+	Changes after check #1 for Desktop Reference rev. 2.
+
+	* parr.pl: Make perl5ish.
+	Add -gutter.
+
+	* ch-variables.tex: Use thingie instead of object.
+
+	* ch-system.tex: system: returns child status.
+
+	* ch-structs.tex: Add P.
+
+	* ch-stdmods.tex: Add missing modules.
+	Make wordings more consequent.
+
+	* ch-statements.tex: foreach can take a continue block.
+
+	* ch-search.tex: *** empty log message ***
+
+	* ch-regexp.tex: Rewording.
+
+	* ch-pragma.tex: Rewordings.
+	Add lid, ops, vars.
+
+	* ch-misc.tex: wantarray expects a list (a.o.t. array) value.
+
+	* ch-io.tex: Typo: performs a>N< open(2) call.
+
+	* ch-debugger.tex: Phew. Needed a lot of updates...
+
+	* ch-arrays.tex: Change title (use 'hash' instead of 'list').
+
+	* README: Update revision.
+	Remove LaTeX generation.
+
+	* DistMakefile: Turn ./parr into $(PARR). Use $(PFLAGS).
+
+Sun Oct 27 17:19:54 1996  Johan Vromans  <jvromans@squirrel.nl>
+
+	* refbase.cls: Make the header modifyable.
+
+Sun Aug  4 21:58:58 1996  Johan Vromans  <jvromans@squirrel.nl>
+
+	* refbase.cls: Update to 5.003.
+
+	* ch-conversions.tex: vec: correct description.
+
+Sat Apr 27 10:20:49 1996  Johan Vromans  <jvromans@squirrel.nl>
+
+	* parr.pl: Allow VMS users to define TMPDIR for temporary storage.
+	Add -notumble option to explicitly settumble to false.
+
+Sat Apr  6 15:30:11 1996  Johan Vromans  <jvromans@squirrel.nl>
+
+	* Makefile: Now only for maintenance.
+
+	* DistMakefile: Initial revision
+
+	* ch-operators.tex: *** empty log message ***
+
+	* ch-operators.tex: Rewrite to use operator precedence table.
+
+	* ch-operators.tex: Update before rewrite.
+
+Fri Apr  5 11:05:10 1996  Johan Vromans  <jvromans@squirrel.nl>
+
+	* ch-command.tex (-0): value is optional.
+
+	* ch-arrays.tex (pop): similar to shift if array is omitted.
+
 Mon Apr  1 22:58:41 1996  Johan Vromans  <jvromans@squirrel.nl>
 
 	* refmaster.tex: Add section 'Standard modules'.

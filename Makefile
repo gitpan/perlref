@@ -1,4 +1,4 @@
-# $Id: DistMakefile,v 1.2 1996-12-11 20:39:27+01 jv Exp $
+# $Id: DistMakefile,v 1.2 1996-12-11 20:39:27+01 jv Exp jv $
 
 ################ Configuration ################
 
@@ -21,7 +21,7 @@ VALIGN	= 0
 
 ################ End of Configuration ################
 
-all:	refguide.ps refcover.ps
+all:	refguide.ps
 
 2pass:	guide-odd.ps guide-even1.ps guide-even2.ps refcover.ps
 
@@ -31,10 +31,6 @@ PFLAGS = $(PAPER) $(DUPLEX) $(TUMBLE) -shift $(HALIGN) -topshift $(VALIGN)
 refguide.ps:	refbase.ps parr.pl
 	$(PARR) $(PFLAGS) -bookorder \
 		refbase.ps > refguide.ps
-
-refcover.ps:	refcbase.ps parr.pl
-	$(PARR) $(PFLAGS) -order 2,1 \
-		refcbase.ps > refcover.ps
 
 testpage.ps:	testbase.ps parr.pl Makefile
 	$(PARR) $(PFLAGS) \
@@ -68,5 +64,5 @@ guide-test.ps:	refbase.ps parr.pl
 
 clean:
 	rm -f refguide.ps guide-odd.ps guide-even1.ps guide-even2.ps \
-		refcover.ps refbase.dvi core *~
+		core *~
 
