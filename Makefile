@@ -1,4 +1,4 @@
-# $Id: DistMakefile,v 1.3 1997-08-08 14:48:11+02 jv Exp jv $
+# $Id: DistMakefile,v 1.4 1997-08-08 15:01:14+02 jv Exp $
 
 ################ Configuration ################
 
