@@ -1,0 +1,211 @@
+Sat Jan 13 14:40:37 1996  Johan Vromans  <jvromans@squirrel.nl>
+
+	* ch-cover.tex: small layout change.
+
+	* ch-back.tex, refmaster.tex, refcmaster.tex: Change Copyright
+ 	dates and wordings.
+
+	* README: Mention use of sub-directory.
+
+Thu Jan 11 21:43:25 1996  Johan Vromans  <jvromans@squirrel.nl>
+
+	* refcmaster.tex: Remove version definition.
+
+	* Makefile: Use the new parr options everywhere.
+	Make archive in its own directory.
+
+Thu Dec 28 22:34:12 1995  Johan Vromans  <jvromans@squirrel.nl>
+
+	* parr.pl: Oops. Letter handling needs some corrections...
+
+Sun Dec 24 15:17:40 1995  Johan Vromans  <jvromans@squirrel.nl>
+
+	* makebase.pl: Add generation and printing of table-of-contents.
+
+	* parr.pl: Revamp adjusting.
+	Eliminate warning about multiple of four.
+
+	* README:
+	Add description on how to use test page generation and printing.
+
+	* Makefile: Revamp parr.pl adjusting.
+	Add test page generation and printing.
+	Add generation and printing of table-of-contents.
+
+	* refbase.cls: Use Courier-Bold for \tt font.
+
+	* ch-io.tex:
+	Use "+<FILE" instead of "+>FILE" as suggested by Marc Shapiro
+	<mds@cs.wisc.edu>.
+
+	* ch-search.tex, ch-structs.tex, ch-conversions.tex:
+	Typos as dettected by d-lewart@uiuc.edu (Daniel S. Lewart).
+
+	* ch-cover.tex, refbase.cls:
+	Add generation and printing of table-of-contents.
+
+	* Makefile.psutils: Initial revision
+
+Wed Nov 29 19:40:14 1995  Johan Vromans  <jvromans@squirrel.nl>
+
+	* perlref.txt: Initial revision
+
+Fri Nov 24 12:26:10 1995  Johan Vromans  <jvromans@squirrel.nl>
+
+	* refcmaster.tex: Initial revision
+
+Fri Nov 24 12:22:01 1995  Johan Vromans  <jvromans@squirrel.nl>
+
+	* parr.pl, Makefile, README: Update to 5.001.
+
+Tue Nov 21 13:11:33 1995  Johan Vromans  <jvromans@squirrel.nl>
+
+	* ch-arithmetic.tex, ch-arrays.tex, ch-command.tex, ch-conversions.tex, ch-cover.tex, ch-debugger.tex, ch-environment.tex, ch-filetests.tex, ch-formats.tex, ch-io.tex, ch-ipc.tex, ch-literals.tex, ch-misc.tex, ch-modules.tex, ch-oo.tex, ch-operators.tex, ch-regexp.tex, ch-search.tex, ch-specarrays.tex, ch-specvars.tex, ch-strings.tex, ch-structs.tex, ch-sysinfo.tex, ch-system.tex, ch-variables.tex:
+	Bump to 5.001.
+	Apply changes from ITP copy editors.
+	Port to LaTeX2e.
+
+	* refmaster.tex, refcbase.tex, Makefile: Bump to 5.001.
+	Port to LaTeX2e.
+
+	* refbase.cls: new file, import from refbase.sty.
+
+Fri Oct  6 19:47:44 1995  Johan Vromans  <jvromans@squirrel.nl>
+
+	* parr.pl: Oops, correct bookorder mistake.
+
+Tue Sep  5 07:45:06 1995  Johan Vromans  <jvromans@squirrel.nl>
+
+	* parr.pl: Make bookorder a bit more flexible. Unsupported.
+
+Tue May 23 19:51:10 1995  Johan Vromans  <jv@squirrel.NL.net>
+
+	* ch-specvars.tex: "$^W The value if" should be "... of".
+
+Thu Jan 19 14:27:23 1995  Johan Vromans  <jv@squirrel.NL.net>
+
+	* parr.pl, Makefile, README: *** empty log message ***
+
+	* ch-specvars.tex: Deprecate $# .
+
+	* refcbase.tex: New file for Camel cover.
+
+Tue Jan 17 16:53:02 1995  Johan Vromans  <jv@squirrel.NL.net>
+
+	* ch-variables.tex, ch-search.tex, ch-regexp.tex, ch-modules.tex,
+	ch-conversions.tex, ch-io.tex:
+	Small changes as suggested by Ilya Zakharevich
+	<ilya@math.ohio-state.edu>
+
+	* ch-literals.tex: Correct typo in hash ref.
+
+	* ch-modules.tex: <list> is optional for import, no, tie and use.
+
+	* ch-networking.tex: Add space between getsocketopt and <socket>.
+
+Wed Jan 11 13:59:38 1995  Johan Vromans  <jv@squirrel.NL.net>
+
+	* ==== alpha 2 ====
+
+	* refbase.sty, ch-cover.tex: Start page numbering with 1.
+
+	* ch-variables.tex: Add remark about ${...} etc.
+	  (%var): Correct array<->hash typo.
+
+	* ch-strings.tex (eval): Xref to eval(misc).
+
+	* ch-specvars.tex: ($]) Is now always numeric(?).
+
+	* ch-regexp.tex: (?...) Are always allowed, they do not need /x .
+
+	* ch-oo.tex: Correct typo "menthod".
+
+	* ch-operators.tex: Shuffle a bit to look like precedence order.
+	Shorten. Correct descriptions of "..", "<->/cmp".
+
+	* ch-misc.tex (defined): Use "actual value" instead of "real value".
+
+	* ch-literals.tex: (Filehandles) Shorten.
+
+
+Sat Jan  7 22:30:45 1995  Johan Vromans  <jv@squirrel.NL.net>
+
+	* ==== alpha 1 ====
+
+	* parr.pl: Adjust shift to approx. correct values.
+
+Sat Jan  7 17:04:44 1995  Johan Vromans  <jv@squirrel.NL.net>
+
+	* refmaster.tex: Add "Object oriented programming".
+
+	* ch-specarrays.tex: Add @EXPORT and @EXPORT_OK.
+
+	* ch-oo.tex: Initial revision
+
+	* ch-specvars.tex: Save space.
+
+Sat Jan  7 16:12:12 1995  Johan Vromans  <jv@squirrel.NL.net>
+
+	* refmaster.tex, refbase.sty, ch-arrays.tex, ch-conversions.tex,
+	ch-debugger.tex, ch-files.tex, ch-filetests.tex, ch-formats.tex,
+	ch-io.tex, ch-literals.tex, ch-misc.tex, ch-modules.tex,
+	ch-operators.tex, ch-regexp.tex, ch-search.tex, ch-specvars.tex,
+	ch-statements.tex, ch-strings.tex, ch-system.tex,
+	ch-variables.tex:
+	Batch of corrections
+
+Fri Jan  6 23:14:40 1995  Johan Vromans  <jv@squirrel.NL.net>
+
+	* parr.pl: Rewrote.
+
+	* parr.pl, makebase.pl, refbase.sty, refmaster.tex,
+	ch-arithmetic.tex, ch-arrays.tex, ch-back.tex, ch-cover.tex,
+	ch-formats.tex, ch-io.tex, ch-ipc.tex, ch-literals.tex,
+	ch-modules.tex, ch-operators.tex, ch-regexp.tex, ch-search.tex,
+	ch-system.tex, ch-variables.tex: 
+	Batch of corrections.
+
+Thu Jan  5 21:08:00 1995  Johan Vromans  <jv@squirrel.NL.net>
+
+	* refbase.sty: Add true, false.
+	Add pre-section whitespace to pr@section.
+
+Tue Jan  3 18:31:19 1995  Johan Vromans  <jv@squirrel.NL.net>
+
+	* ch-arithmetic.tex, ch-arrays.tex, ch-back.tex,
+	ch-conversions.tex, ch-debugger.tex, ch-directories.tex,
+	ch-environment.tex, ch-files.tex, ch-filetests.tex,
+	ch-literals.tex, ch-modules.tex, ch-networking.tex,
+	ch-operators.tex, ch-specarrays.tex, ch-strings.tex,
+	ch-structs.tex, ch-sysinfo.tex, ch-system.tex, ch-variables.tex,
+	ch-command.tex, ch-cover.tex, ch-formats.tex, ch-io.tex,
+	ch-ipc.tex, ch-misc.tex, ch-search.tex, ch-specvars.tex,
+	ch-statements.tex:
+	Batch of corrections.
+
+	* ch-modules.tex: Initial revision
+
+Mon Jan  2 21:10:38 1995  Johan Vromans  <jv@squirrel.NL.net>
+
+	* ch-arithmetic.tex, ch-arrays.tex, ch-back.tex, ch-command.tex,
+	ch-conversions.tex, ch-environment.tex, ch-formats.tex, ch-io.tex,
+	ch-ipc.tex, ch-literals.tex, ch-misc.tex, ch-operators.tex,
+	ch-regexp.tex, ch-search.tex, ch-statements.tex, ch-strings.tex,
+	ch-system.tex, ch-variables.tex, refbase.sty: *** empty log
+	message ***
+
+Mon Jan  2 12:27:25 1995  Johan Vromans  <jv@squirrel.NL.net>
+
+	* ch23.tex: *** empty log message ***
+
+	* Makefile, parr.pl, makebase.pl, README, ch00.tex: Import from v4
+
+	* refbase.sty: *** empty log message ***
+
+	* refbase.sty, refmaster.tex, ch01.tex, ch02.tex, ch03.tex,
+	ch04.tex, ch05.tex, ch06.tex, ch07.tex, ch08.tex, ch09.tex,
+	ch10.tex, ch11.tex, ch12.tex, ch13.tex, ch14.tex, ch15.tex,
+	ch16.tex, ch17.tex, ch18.tex, ch19.tex, ch20.tex, ch21.tex,
+	ch22.tex, ch23.tex, ch24.tex, ch25.tex, ch26.tex, ch27.tex,
+	ch99.tex: Import from v4
+

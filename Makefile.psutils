@@ -1,0 +1,50 @@
+# $Id: Makefile.psutils,v 1.2 1995/12/24 15:14:37 jv Exp $
+# Makefile to generate the Reference Guide using Angus Dunnan's
+# PostScript utilities.
+
+################ Configuration ################
+
+SHELL	= /bin/sh
+PSSELECT= psselect
+PSTOPS	= pstops
+
+# Alignment.
+# Change VALIGN for vertical shift.
+# For horizontal shift, adjust LALIGN and RALIGN while keeping 
+# the distance fixed at 111mm, e.g. '11.5mm' and '122.5mm'.
+VALIGN	= 210mm
+LALIGN	= 9.5mm
+RALIGN	= 120.5mm
+
+################ End of Configuration ################
+
+SCALE	= 0.7071
+SPECS	= '2:0@$(SCALE)L($(VALIGN),$(LALIGN))+1@$(SCALE)L($(VALIGN),$(RALIGN))'
+ORDER	= 25,2,3,24,23,4,5,22,21,6,7,20,19,8,9,18,17,10,11,16,15,12,13,14
+
+all:	refguide.ps refcover.ps
+
+2pass:	guide-odd.ps guide-even1.ps guide-even2.ps refcover.ps
+
+testpage.ps:	testbase.ps
+	$(PSTOPS) $(SPECS) testbase.ps > testpage.ps
+	rm -f refguide.ps
+
+refguide.ps:	refbase.ps
+	$(PSSELECT) -p$(ORDER) refbase.ps | $(PSTOPS) $(SPECS) > refguide.ps
+
+guide-odd.ps:	refguide.ps
+	$(PSSELECT) -o refguide.ps > guide-odd.ps
+
+guide-even1.ps:	refbase.ps
+	$(PSSELECT) -e -r refguide.ps > guide-even1.ps
+
+guide-even2.ps:	refguide.ps
+	$(PSSELECT) -e refguide.ps > guide-even2.ps
+
+refcover.ps:	refcbase.ps
+	$(PSTOPS) $(SPECS) refcbase.ps > refcover.ps
+
+clean:
+	rm -f testpage.ps refguide.ps refcover.ps
+	rm -f guide-odd.ps guide-even1.ps guide-even2.ps
