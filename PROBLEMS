@@ -9,13 +9,6 @@ Printers
   the ' (right quote) is thicker at the top while ` (the left quote) is
   thicker at the bottom.
 
-  This problem is common with Ghostscript, that uses the Courier font
-  as donated by IBM to the X Consortium. A solution is to download
-  Adobe Acrobat from ftp.adobe.com. It comes with a full set of
-  Postscript fonts (which are the *REAL* ones!). You can then instruct
-  Ghostscript to use these fonts instead by modifying the Fontmap file
-  in the Ghostscript library.
-
 * Printer: Panasonic KX-P5400. (janet@uniwa.uwa.edu.au)
   The Guide and cover page print fine, except for one thing:  printing the
   cover page leaves the printer in a state where the reference guide does
@@ -45,6 +38,13 @@ Printers
 
   (And you'll probably have to adjust the document alignment
   parameters as well.) 
+
+LaTeX and DviPS
+---------------
+* I used TeX 3.1415N with LaTeX2e <1994/12/01> patch level 3.
+  Older LaTeX2e versions may work, LaTeX 2.09 will not.
+
+* Dvips is known to work as of version 5.47. I used 5.58a.
 
 Angus Dunnan's PostScript utilities
 -----------------------------------
