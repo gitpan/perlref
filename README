@@ -40,8 +40,7 @@ INSTALLATION
     files in a suitably named sub-directory:
 
 	README	    - this file
-	ChangeLog   - description of changes
-	Makefile    - makefile
+	Makefile    - makefile (should be system independent)
 	parr.pl	    - reformat and rearrange tool
 	Layout	    - description of the format
 	MANIFEST    - a list of files
@@ -117,10 +116,7 @@ INSTALLATION
        But if you're looking at the text of the middle pages -- use
        "guide-even2.ps". 
 
-     - Use "make refcover.ps" to format a nice cover page. 
-
-    "make" without arguments will default to refguide.ps and
-    refcover.ps .
+    "make" without arguments will default to refguide.ps.
 
     NOTE: If you have Angus Duggan's psutils package installed you can
           use Makefile.psutils instead. However, this is not
@@ -174,11 +170,12 @@ Tim O'Reilly (O'Reilly & Associates, Inc.) wrote me:
     we need to acknowledge them as such if they are used elsewhere.
 
 Thanks Tim, for the permission.
+The PostScript file has grown to 400Kb (including 280Kb for the cover).
 
 O'Reilly & Associates have published the Reference Guide as a handy
 booklet under the name Perl5 Desktop Reference (ISBN 1-56592-187-9).
-The cyan covered version of the Desktop Reference is based on Perl 5.001,
-the magenta covered version is based on Perl 5.003. For just $6.95 you
+The magenta version of the Desktop Reference is based on Perl 5.001,
+the cyan covered version is based on Perl 5.003. For just $6.95 you
 can save yourself the troubles of printing, aligning, adjusting,
 folding, cutting and stapling.
 
@@ -218,5 +215,5 @@ For a japanese version of the reference guide, please contact
 Yoshiyuki KONDO <cond@lsi-j.co.jp>.
 
 -- PostScript is a trademark of Adobe, I assume.
-$Id: README,v 5.8 1997-07-27 19:20:59+02 jv Exp $
+$Id: README,v 5.9 1997-08-08 14:51:53+02 jv Exp $
 

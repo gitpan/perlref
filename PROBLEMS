@@ -46,13 +46,6 @@ Printers
   (And you'll probably have to adjust the document alignment
   parameters as well.) 
 
-LaTeX and DviPS
----------------
-* I used TeX 3.1415N with LaTeX2e <1994/12/01> patch level 3.
-  Older LaTeX2e versions may work, LaTeX 2.09 will not.
-
-* Dvips is known to work as of version 5.47. I used 5.58a.
-
 Angus Dunnan's PostScript utilities
 -----------------------------------
 * Makefile.psutils can be used to create A4 based reference copies

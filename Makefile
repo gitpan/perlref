@@ -1,4 +1,4 @@
-# $Id: DistMakefile,v 1.2 1996-12-11 20:39:27+01 jv Exp jv $
+# $Id: DistMakefile,v 1.3 1997-08-08 14:48:11+02 jv Exp jv $
 
 ################ Configuration ################
 
@@ -21,18 +21,18 @@ VALIGN	= 0
 
 ################ End of Configuration ################
 
-all:	refguide.ps
+all :	refguide.ps
 
-2pass:	guide-odd.ps guide-even1.ps guide-even2.ps refcover.ps
+2pass :	guide-odd.ps guide-even1.ps guide-even2.ps
 
 PFLAGS = $(PAPER) $(DUPLEX) $(TUMBLE) -shift $(HALIGN) -topshift $(VALIGN)
 
 # 2 pages per page, suitable for centrefold printing.
-refguide.ps:	refbase.ps parr.pl
+refguide.ps :	refbase.ps parr.pl
 	$(PARR) $(PFLAGS) -bookorder \
 		refbase.ps > refguide.ps
 
-testpage.ps:	testbase.ps parr.pl Makefile
+testpage.ps :	testbase.ps parr.pl Makefile
 	$(PARR) $(PFLAGS) \
 		testbase.ps > testpage.ps
 
@@ -43,26 +43,27 @@ testpage.ps:	testbase.ps parr.pl Makefile
 # guide-even2.ps for printers with reverse output stacking, like old
 # Apple LaserWriters. 
 
-guide-odd.ps:	refbase.ps parr.pl
+guide-odd.ps :	refbase.ps parr.pl
 	$(PARR) $(PFLAGS) \
 		-bookorder -odd \
 		refbase.ps > guide-odd.ps
 
-guide-even1.ps:	refbase.ps parr.pl
+guide-even1.ps :	refbase.ps parr.pl
 	$(PARR) $(PFLAGS) \
 		-bookorder -even \
 		refbase.ps > guide-even1.ps
 
-guide-even2.ps:	refbase.ps parr.pl
+guide-even2.ps :	refbase.ps parr.pl
 	$(PARR) $(PFLAGS) \
 		-bookorder -even -reverse \
 		refbase.ps > guide-even2.ps
 
-guide-test.ps:	refbase.ps parr.pl
+guide-test.ps :	refbase.ps parr.pl
 	$(PARR) $(PFLAGS) \
 		refbase.ps > guide-test.ps
 
-clean:
-	rm -f refguide.ps guide-odd.ps guide-even1.ps guide-even2.ps \
-		core *~
+# System independent clean-up
+clean :
+	$(PERL) -e 'unlink(@ARGV)' refguide.ps guide-odd.ps guide-even1.ps \
+		guide-even2.ps testpage.ps core *~
 
